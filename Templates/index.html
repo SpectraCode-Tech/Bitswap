@@ -7,14 +7,15 @@
         <div class="container py-5">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6">
-                    <h1 class="display-4 mb-3 animated slideInDown">Make Better Life With Trusted CryptoCoin</h1>
-                    <p class="animated slideInDown">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
-                        diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo
-                        magna dolore erat amet</p>
-                    <a href="" class="btn btn-primary py-3 px-4 animated slideInDown">Explore More</a>
+                    <h1 class="display-4 mb-3 animated slideInDown">Make Smarter Crypto Trades with BitSwap</h1>
+                    <p class="animated slideInDown">
+                        Buy, sell, and store cryptocurrency securely on BitSwap — a trusted peer-to-peer exchange built for speed, safety, and full user control.
+                        Create your wallet in minutes, trade confidently with escrow protection, and manage your digital assets anytime, anywhere.
+                    </p>
+                    <a href="{% url "service" %}" class="btn btn-primary py-3 px-4 animated slideInDown">Explore More</a>
                 </div>
                 <div class="col-lg-6 animated fadeIn">
-                    <img class="img-fluid animated pulse infinite" style="animation-duration: 3s;" src="img/hero-1.png"
+                    <img class="img-fluid animated pulse infinite" style="animation-duration: 3s;" src="{% static 'img/hero-1.png' %}"
                         alt="">
                 </div>
             </div>
@@ -28,28 +29,26 @@
         <div class="container">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <img class="img-fluid" src="img/about.png" alt="">
+                    <img class="img-fluid" src="{% static 'img/about.png' %}" alt="">
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="h-100">
-                        <h1 class="display-6">About Us</h1>
+                        <h1 class="display-6">About BitSwap</h1>
                         <p class="text-primary fs-5 mb-4">The Most Trusted Cryptocurrency Platform</p>
-                        <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos.
-                            Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet
+                        <p>BitSwap is a secure and reliable peer-to-peer cryptocurrency platform designed to make digital asset trading simple, transparent, and safe. We empower users with personal wallets and a trusted marketplace to buy, sell, and store crypto with confidence.
                         </p>
-                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet
-                            diam et eos. Clita erat ipsum et lorem et sit.</p>
+                        <p class="mb-4">Our platform is built with industry-standard security, escrow protection, and an intuitive user experience that removes complexity from crypto trading. At BitSwap, users remain in full control of their funds while enjoying fast transactions and global access.</p>
                         <div class="d-flex align-items-center mb-2">
                             <i class="fa fa-check bg-light text-primary btn-sm-square rounded-circle me-3 fw-bold"></i>
-                            <span>Tempor erat elitr rebum at clita</span>
+                            <span>Secure personal wallets for every user</span>
                         </div>
                         <div class="d-flex align-items-center mb-2">
                             <i class="fa fa-check bg-light text-primary btn-sm-square rounded-circle me-3 fw-bold"></i>
-                            <span>Tempor erat elitr rebum at clita</span>
+                            <span>Trusted peer-to-peer trading environment</span>
                         </div>
                         <div class="d-flex align-items-center mb-4">
                             <i class="fa fa-check bg-light text-primary btn-sm-square rounded-circle me-3 fw-bold"></i>
-                            <span>Tempor erat elitr rebum at clita</span>
+                            <span>Escrow-protected transactions</span>
                         </div>
                         <a class="btn btn-primary py-3 px-4" href="">Read More</a>
                     </div>
@@ -65,17 +64,17 @@
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-4 col-md-6 text-center wow fadeIn" data-wow-delay="0.1s">
-                    <img class="img-fluid mb-4" src="img/icon-9.png" alt="">
+                    <img class="img-fluid mb-4" src="{% static 'img/icon-9.png' %}" alt="">
                     <h1 class="display-4" data-toggle="counter-up">123456</h1>
                     <p class="fs-5 text-primary mb-0">Today Transactions</p>
                 </div>
                 <div class="col-lg-4 col-md-6 text-center wow fadeIn" data-wow-delay="0.3s">
-                    <img class="img-fluid mb-4" src="img/icon-10.png" alt="">
+                    <img class="img-fluid mb-4" src="{% static 'img/icon-10.png' %}" alt="">
                     <h1 class="display-4" data-toggle="counter-up">123456</h1>
                     <p class="fs-5 text-primary mb-0">Monthly Transactions</p>
                 </div>
                 <div class="col-lg-4 col-md-6 text-center wow fadeIn" data-wow-delay="0.5s">
-                    <img class="img-fluid mb-4" src="img/icon-2.png" alt="">
+                    <img class="img-fluid mb-4" src="{% static 'img/icon-2.png' %}" alt="">
                     <h1 class="display-4" data-toggle="counter-up">123456</h1>
                     <p class="fs-5 text-primary mb-0">Total Transactions</p>
                 </div>
@@ -95,61 +94,55 @@
             <div class="row g-5">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="d-flex align-items-start">
-                        <img class="img-fluid flex-shrink-0" src="img/icon-7.png" alt="">
+                        <img class="img-fluid flex-shrink-0" src="{% static 'img/icon-7.png' %}" alt="">
                         <div class="ps-4">
                             <h5 class="mb-3">Easy To Start</h5>
-                            <span>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit
-                                clita duo justo</span>
+                            <span>Create an account in minutes and get your personal crypto wallet instantly. No complicated setup, no technical stress.</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="d-flex align-items-start">
-                        <img class="img-fluid flex-shrink-0" src="img/icon-6.png" alt="">
+                        <img class="img-fluid flex-shrink-0" src="{% static 'img/icon-6.png' %}" alt="">
                         <div class="ps-4">
                             <h5 class="mb-3">Safe & Secure</h5>
-                            <span>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit
-                                clita duo justo</span>
+                            <span>BitSwap uses advanced security measures, encrypted wallets, and escrow protection to keep your funds and data safe.</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="d-flex align-items-start">
-                        <img class="img-fluid flex-shrink-0" src="img/icon-5.png" alt="">
+                        <img class="img-fluid flex-shrink-0" src="{% static 'img/icon-5.png' %}" alt="">
                         <div class="ps-4">
                             <h5 class="mb-3">Affordable Plans</h5>
-                            <span>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit
-                                clita duo justo</span>
+                            <span>Enjoy transparent and competitive fees with no hidden charges. You always know what you’re paying before you trade.</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="d-flex align-items-start">
-                        <img class="img-fluid flex-shrink-0" src="img/icon-4.png" alt="">
+                        <img class="img-fluid flex-shrink-0" src="{% static 'img/icon-4.png' %}" alt="">
                         <div class="ps-4">
                             <h5 class="mb-3">Secure Storage</h5>
-                            <span>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit
-                                clita duo justo</span>
+                            <span>Store your digital assets in protected wallets designed to prevent unauthorized access.</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="d-flex align-items-start">
-                        <img class="img-fluid flex-shrink-0" src="img/icon-3.png" alt="">
+                        <img class="img-fluid flex-shrink-0" src="{% static 'img/icon-3.png' %}" alt="">
                         <div class="ps-4">
                             <h5 class="mb-3">Protected By Insurance</h5>
-                            <span>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit
-                                clita duo justo</span>
+                            <span>Trades are safeguarded with escrow and platform-level protection to reduce risk during peer-to-peer transactions.</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="d-flex align-items-start">
-                        <img class="img-fluid flex-shrink-0" src="img/icon-8.png" alt="">
+                        <img class="img-fluid flex-shrink-0" src="{% static 'img/icon-8.png' %}" alt="">
                         <div class="ps-4">
                             <h5 class="mb-3">24/7 Support</h5>
-                            <span>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit
-                                clita duo justo</span>
+                            <span>Our dedicated support team is available around the clock to assist you whenever you need help.</span>
                         </div>
                     </div>
                 </div>
@@ -169,55 +162,49 @@
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item bg-white p-5">
-                        <img class="img-fluid mb-4" src="img/icon-7.png" alt="">
+                        <img class="img-fluid mb-4" src="{% static 'img/icon-7.png' %}" alt="">
                         <h5 class="mb-3">Currency Wallet</h5>
-                        <p>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo
-                            justo</p>
+                        <p>Create and manage secure personal wallets to store your digital assets safely while maintaining full control of your funds.</p>
                         <a href="">Read More <i class="fa fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item bg-white p-5">
-                        <img class="img-fluid mb-4" src="img/icon-3.png" alt="">
+                        <img class="img-fluid mb-4" src="{% static 'img/icon-3.png' %}" alt="">
                         <h5 class="mb-3">Currency Transaction</h5>
-                        <p>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo
-                            justo</p>
+                        <p>Send and receive cryptocurrency quickly with real-time processing and transparent transaction tracking.</p>
                         <a href="">Read More <i class="fa fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item bg-white p-5">
-                        <img class="img-fluid mb-4" src="img/icon-9.png" alt="">
+                        <img class="img-fluid mb-4" src="{% static 'img/icon-9.png' %}" alt="">
                         <h5 class="mb-3">Bitcoin Investment</h5>
-                        <p>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo
-                            justo</p>
+                        <p>Access trusted opportunities to trade and grow your Bitcoin holdings with confidence on a secure platform.</p>
                         <a href="">Read More <i class="fa fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item bg-white p-5">
-                        <img class="img-fluid mb-4" src="img/icon-5.png" alt="">
+                        <img class="img-fluid mb-4" src="{% static 'img/icon-5.png' %}" alt="">
                         <h5 class="mb-3">Currency Exchange</h5>
-                        <p>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo
-                            justo</p>
+                        <p>Easily exchange supported cryptocurrencies at competitive rates through our seamless trading system.</p>
                         <a href="">Read More <i class="fa fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item bg-white p-5">
-                        <img class="img-fluid mb-4" src="img/icon-2.png" alt="">
+                        <img class="img-fluid mb-4" src="{% static 'img/icon-2.png' %}" alt="">
                         <h5 class="mb-3">Bitcoin Escrow</h5>
-                        <p>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo
-                            justo</p>
+                        <p>Easily exchange supported cryptocurrencies at competitive rates through our seamless trading system.</p>
                         <a href="">Read More <i class="fa fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item bg-white p-5">
-                        <img class="img-fluid mb-4" src="img/icon-8.png" alt="">
+                        <img class="img-fluid mb-4" src="{% static 'img/icon-8.png' %}" alt="">
                         <h5 class="mb-3">Token Sale</h5>
-                        <p>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo
-                            justo</p>
+                        <p>Participate in verified token sales and access new digital assets directly through the BitSwap platform.</p>
                         <a href="">Read More <i class="fa fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
@@ -237,33 +224,33 @@
             <div class="owl-carousel roadmap-carousel wow fadeInUp" data-wow-delay="0.1s">
                 <div class="roadmap-item">
                     <div class="roadmap-point"><span></span></div>
-                    <h5>January 2045</h5>
-                    <span>Diam dolor ipsum sit amet erat ipsum lorem sit</span>
+                    <h5>January 2026</h5>
+                    <span>Platform planning, architecture design, and security framework setup.</span>
                 </div>
                 <div class="roadmap-item">
                     <div class="roadmap-point"><span></span></div>
-                    <h5>March 2045</h5>
-                    <span>Diam dolor ipsum sit amet erat ipsum lorem sit</span>
+                    <h5>March 2026</h5>
+                    <span>Core wallet system development and internal testing.</span>
                 </div>
                 <div class="roadmap-item">
                     <div class="roadmap-point"><span></span></div>
-                    <h5>May 2045</h5>
-                    <span>Diam dolor ipsum sit amet erat ipsum lorem sit</span>
+                    <h5>May 2026</h5>
+                    <span>Peer-to-peer marketplace development and escrow system integration.</span>
                 </div>
                 <div class="roadmap-item">
                     <div class="roadmap-point"><span></span></div>
-                    <h5>July 2045</h5>
-                    <span>Diam dolor ipsum sit amet erat ipsum lorem sit</span>
+                    <h5>July 2026</h5>
+                    <span>Peer-to-peer marketplace development and escrow system integration.</span>
                 </div>
                 <div class="roadmap-item">
                     <div class="roadmap-point"><span></span></div>
-                    <h5>September 2045</h5>
-                    <span>Diam dolor ipsum sit amet erat ipsum lorem sit</span>
+                    <h5>September 2026</h5>
+                    <span>Mobile responsiveness improvements and UI/UX upgrades.</span>
                 </div>
                 <div class="roadmap-item">
                     <div class="roadmap-point"><span></span></div>
-                    <h5>November 2045</h5>
-                    <span>Diam dolor ipsum sit amet erat ipsum lorem sit</span>
+                    <h5>November 2026</h5>
+                    <span>Launch of the BitSwap platform and initial token sale.</span>
                 </div>
             </div>
         </div>
@@ -307,10 +294,10 @@
                     <a class="btn btn-primary py-3 px-4" href="">Buy Token</a>
                 </div>
                 <div class="col-12 text-center">
-                    <img class="img-fluid m-1" src="img/payment-1.png" alt="" style="width: 50px;">
-                    <img class="img-fluid m-1" src="img/payment-2.png" alt="" style="width: 50px;">
-                    <img class="img-fluid m-1" src="img/payment-3.png" alt="" style="width: 50px;">
-                    <img class="img-fluid m-1" src="img/payment-4.png" alt="" style="width: 50px;">
+                    <img class="img-fluid m-1" src="{% static 'img/payment-1.png' %}" alt="" style="width: 50px;">
+                    <img class="img-fluid m-1" src="{% static 'img/payment-2.png' %}" alt="" style="width: 50px;">
+                    <img class="img-fluid m-1" src="{% static 'img/payment-3.png' %}" alt="" style="width: 50px;">
+                    <img class="img-fluid m-1" src="{% static 'img/payment-4.png' %}" alt="" style="width: 50px;">
                 </div>
             </div>
         </div>
@@ -328,132 +315,29 @@
             <div class="row justify-content-center">
                 <div class="col-lg-10">
                     <div class="accordion" id="accordionExample">
-                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.1s">
-                            <h2 class="accordion-header" id="headingOne">
+
+                        {% for faq in faqs %}
+                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.{{forloop.counter}}s">
+                            <h2 class="accordion-header" id="heading{{forloop.counter}}">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    How to build a website?
+                                    data-bs-target="#collapse{{forloop.counter}}" aria-expanded="{% if forloop.first %}true {% else %}false {% endif %}" aria-controls="collapse{{forloop.counter}}">
+                                    {{ faq.question }}
                                 </button>
                             </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            <div id="collapse{{forloop.counter}}" class="accordion-collapse collapse {% if forloop.first %}show{% endif %}" aria-labelledby="heading{{forloop.counter}}"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna
-                                    diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+                                    {{ faq.answer }}
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.2s">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    How long will it take to get a new website?
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna
-                                    diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.3s">
-                            <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Do you only create HTML websites?
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna
-                                    diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.4s">
-                            <h2 class="accordion-header" id="headingFour">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                                    Will my website be mobile-friendly?
-                                </button>
-                            </h2>
-                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna
-                                    diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.5s">
-                            <h2 class="accordion-header" id="headingFive">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                    Will you maintain my site for me?
-                                </button>
-                            </h2>
-                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna
-                                    diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.6s">
-                            <h2 class="accordion-header" id="headingSix">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                    I’m on a strict budget. Do you have any low cost options?
-                                </button>
-                            </h2>
-                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna
-                                    diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.7s">
-                            <h2 class="accordion-header" id="headingSeven">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                    Will you maintain my site for me?
-                                </button>
-                            </h2>
-                            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna
-                                    diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.8s">
-                            <h2 class="accordion-header" id="headingEight">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                                    I’m on a strict budget. Do you have any low cost options?
-                                </button>
-                            </h2>
-                            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna
-                                    diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
-                                </div>
-                            </div>
-                        </div>
+                        {% endfor %}
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- FAQs Start -->
+    <!-- FAQs End -->
 
 
     
