@@ -1,12 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h2>{{request.user.username}}</h2>
-    <h3>Wallet Balance: ₦{{wallet.balance}}</h3>
-</body>
-</html>
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Dashboard{% endblock %}
+    {% block content %}
+
+    <main class="container my-5">
+        
+    <h2 class="text-primary">Welcome, {{request.user.username}}</h2>
+    <h3 class="mb-3">Wallet Balance: ₦{{wallet.balance}}</h3>
+
+  <div class="row mx-5">
+    {% for coin in crypto_rates %}
+    <div class="col-md-4 mb-4">
+
+        <div class="card border p-3 shadow-sm">
+            <img src="{{ coin.image }}" alt="{{ coin.name }} logo" width="40" height="40" class="mb-2">
+            <h5 class="card-title">{{ coin.name }} ({{ coin.symbol|upper }})</h5>
+            <p class="card-text">Price: ₦{{ coin.current_price }}</p>
+            <small class="text-muted">Rank: {{ forloop.counter }}</small>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+    </main>
+
+{% endblock %}
